@@ -1,0 +1,28 @@
+{
+  "name": "typeteca",
+  "version": "1.0.0",
+  "description": "Brand new Types for modern JS application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walandemar/typeteca.git"
+  },
+  "keywords": [
+    "JS",
+    "Node.js",
+    "types",
+    "validation"
+  ],
+  "author": "Volodymyr Parandii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/walandemar/typeteca/issues"
+  },
+  "homepage": "https://github.com/walandemar/typeteca#readme",
+  "engines": {
+    "node": "^8.6.0"
+  }
+}
