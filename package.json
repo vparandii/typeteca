@@ -1,6 +1,6 @@
 {
   "name": "typeteca",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Brand new Types for modern JS application",
   "main": "index.js",
   "scripts": {

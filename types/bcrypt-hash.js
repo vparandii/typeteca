@@ -1,4 +1,4 @@
-const {CustomString} = require('../utils')
+const CustomString = require('../utils/custom-string')
 
 module.exports = class BcryptHash extends CustomString {
   validate(value){

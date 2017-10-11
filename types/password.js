@@ -1,4 +1,4 @@
-const {CustomString} = require('../utils')
+const CustomString = require('../utils/custom-string')
 
 module.exports = class Password extends CustomString {
   validate(value){

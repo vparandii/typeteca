@@ -1,12 +1,6 @@
-class ValidationError extends Error {
-  constructor(...props){
-    super(...props)
-    Error.captureStackTrace(this, this.constructor)
-    this.name = this.constructor.name
-  }
-}
+const ValidationError = require('./validation-error')
 
-class CustomString extends String {
+module.exports = class CustomString extends String {
   constructor(value){
     if (!value) {
       super()
@@ -21,9 +15,4 @@ class CustomString extends String {
       }
     }
   }
-}
-
-module.exports = {
-  CustomString,
-  ValidationError
 }

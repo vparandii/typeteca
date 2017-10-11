@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/typeteca.png?downloads=true&downloadRank=true)](https://nodei.co/npm/typeteca/)
 
-**Typeteca** is a library of brand new types on top of built-in String, Number, etc. Each new type has it's own validation mechanism, so that you can use any data essence like it is native JS data type :boom:🎉:star2:
+**Typeteca** is a library of brand new Types on top of built-in String, Number, etc. Each new Type has it's own validation mechanism, so that you can use any data essence like it is native JS data type :boom:🎉:star2:
 
 It is tiny and zero-dependencies package.
 
@@ -17,9 +17,11 @@ Installing package:
 npm i typeteca
 ```
 
-Standart usage:
+Importing Types and standard usage:
 ```js
 const {Email} = require('typeteca')
+// or
+const Email = require('typeteca/types/email')
 
 const email = new Email('username@example.com')
 
@@ -27,7 +29,7 @@ console.log(email)            // [String: 'username@example.com']
 console.log(email.valueOf())  // username@example.com
 ```
 
-What if email was passed with invalid format?
+What if value has invalid format?
 ```js
 try {
   const email = new Email('usernameexample.com')
@@ -44,14 +46,14 @@ const email = new Email()
 console.log(email)            // [String: '']
 ```
 
-Each of types inherits one of built-in JavaScript ones:
+Each of Types inherits one of built-in JavaScript ones:
 ```js
 const email = new Email('username@example.com')
 
 console.log(email instanceof String)   //true
 ```
 
-You can create custom types on top of Typeteca:
+You can create custom Types on top of Typeteca:
 ```js
 const {CustomString} = require('typeteca')
 
@@ -63,7 +65,7 @@ class Password extends CustomString {
 }
 ```
 
-CustomString class extends String with additional validation layer:
+CustomString util class extends String with additional validation layer:
 ```js
 try {
   const password = new Password(69)
@@ -83,13 +85,18 @@ if (uri.includes('https'))
   throw new ValidationError('Uri might reffer to http protocol only')
 ```
 
-## Types
+## Types & APIs
 
-Comming soon.
+See the detailed [API Reference](https://github.com/walandemar/typeteca/blob/master/API.md).
 
-## Register your own type
+## Use Cases
 
-Comming soon.
+All about using Typeteca during modeling your api endpoints in [Express](https://github.com/expressjs/express/) or [Hapi](https://github.com/hapijs/hapi), extending [Mongoose](https://github.com/Automattic/mongoose) Schemas with brand new Types, or other useful cases - see the detailed [Use Cases Reference](https://github.com/walandemar/typeteca/blob/master/CASES.md).
+
+## Integrations and Plugins - Quick Reference
+
+* [`typeteca-mongoose`](https://github.com/walandemar/typeteca-mongoose) - helps easily integrate Typeteca Types into Mongoose Schema registry
+* to be continued...
 
 ## License
 
