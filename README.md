@@ -1,4 +1,4 @@
-# typeteca
+# Typeteca
 
 [![NPM](https://nodei.co/npm/typeteca.png?downloads=true&downloadRank=true)](https://nodei.co/npm/typeteca/)
 
@@ -8,7 +8,7 @@ It is tiny and zero-dependencies package.
 
 ## Motivation
 
-To develop new programming pattern and get rid of need to use validation libraries.
+One abstract Type library for different validation and schema libraries. Share the same validation rules across different integration endpoints.
 
 ## Usage
 

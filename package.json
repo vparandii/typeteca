@@ -14,7 +14,9 @@
     "JS",
     "Node.js",
     "types",
-    "validation"
+    "validation",
+    "schema",
+    "Typeteca"
   ],
   "author": "Volodymyr Parandii",
   "license": "MIT",
